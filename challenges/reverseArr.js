@@ -11,7 +11,7 @@ function reverseArr(arr){
     let reversedArr = [];
     for(let i = 0 ; i <= arr.length-1 ; i++){
         reversedArr[i] = arr[arr.length-(i+1)]
-        // console.log(`reversedArr[${i}] = arr[${arr.length-(i+1)}]`);
+        console.log(`reversedArr[${i}] = arr[${arr.length-(i+1)}]`);
     }
     console.log('Origin Array >>>>',arr);
     console.log('Reversed Array >>>>',reversedArr);
