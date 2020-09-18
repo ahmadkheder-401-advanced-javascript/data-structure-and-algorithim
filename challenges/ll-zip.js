@@ -73,4 +73,4 @@ ll2.append(9);
 ll2.append(4);
 console.log('>>>>',zipLists(ll1, ll2).head.next.next);
 
-module.exports = {LinkedList,zipLists};
+module.exports = {LinkedList,Node};
