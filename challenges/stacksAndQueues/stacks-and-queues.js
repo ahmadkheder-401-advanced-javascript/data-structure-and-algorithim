@@ -24,6 +24,7 @@ class Stack extends Node {
             popped.next = null;
             return popped.value;
         
+            
 
     }
     peek() {
