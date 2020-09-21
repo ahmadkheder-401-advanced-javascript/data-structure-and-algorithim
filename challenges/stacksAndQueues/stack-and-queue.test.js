@@ -27,9 +27,7 @@ describe('Stack Module', ()=>{
         stack.push(10);
         stack.push(11);
         stack.push(12);
-        stack.pop();
-        stack.pop();
-        stack.pop();
+        for(let i = 0; i < 4; i++) {stack.pop();}
         expect(stack.isEmpty()).toBeTruthy();
     });
     it('peek the next item on the stack',()=>{
@@ -45,14 +43,15 @@ describe('Stack Module', ()=>{
     });
     it('Calling pop or peek on empty stack raises exception',()=>{
         let stack = new Stack();
-        expect(stack.peek()).toThrow('The Stack is Empty');
-        expect(stack.pop()).toThrow('The Stack is Empty');
+        expect(stack.peek()).toThrowError('The Stack is Empty');
+        expect(stack.pop()).toThrowError('The Stack is Empty');
     });
 
     //--------------------------
     it('Can enqueue into a queue',()=>{
-        let queue = new Queue();
-        expect(queue.enqueue(10)).toEqual(rear.value);
+        const queue = new Queue();
+        queue.enqueue("Aylostera");
+        expect(queue.isEmpty()).toBeFalsy();
     });
     it('enqueue multiple values into a queue',()=>{
         let queue = new Queue();
@@ -92,8 +91,8 @@ describe('Stack Module', ()=>{
     });
     it('Calling dequeue or peek on empty queue raises exception',()=>{
         let queue = new Queue();
-        expect(queue.dequeue()).toThrow("The queue is empty")
-        expect(queue.peek()).toThrow(RangeError)
+        expect(queue.dequeue()).toThrowError("The queue is empty")
+        expect(queue.peek()).toThrowError(Error)
     });
    
 });

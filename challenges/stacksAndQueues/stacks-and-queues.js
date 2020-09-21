@@ -13,29 +13,25 @@ class Stack extends Node {
         this.top = newNode;
         return value;
     }
-    pop(){
-        if (this.isEmpty) {
-            // throw new RangeError('The Stack is Empty');
-            // return console.log("The Stack is Empty");
-            throw 'The Stack is Empty';
-        } 
-            let popped = this.top;
-            this.top = this.top.next;
-            popped.next = null;
-            return popped.value;
-        
 
+    pop() {
+        if (this.top === null) throw new Error('The Stack is Empty');
+
+        let take = this.top;
+        this.top = this.top.next;
+        return take.value;
     }
     peek() {
         if (this.isEmpty()) {
-            // throw new RangeError('The Stack is Empty');
-            return console.log("The Stack is Empty");
+
+            throw new Error('The Stack is Empty');
+
         } else {
             return this.top.value;
         }
     }
     isEmpty() {
-        return this.top.value == null ? 1 : 0;
+        return this.top == null ? 1 : 0;
     }
 
 }
@@ -48,14 +44,17 @@ class Queue extends Node {
 
     }
     enqueue(value) {
-        let newNode = new Node(value);
-        this.rear.next = newNode;
-        this.rear = newNode;
+        if (this.isEmpty()) {
+            this.front = new Node(value);
+            this.rear = this.front;
+        } else {
+            this.rear.next = new Node(value);
+            this.rear = this.rear.next;
+        }
     }
     dequeue() {
         if (this.isEmpty()) {
-            throw new RangeError('The queue is empty');
-            // return console.log("The queue is empty;")
+            throw new Error('The queue is empty');
         } else {
             let dequeued = this.front;
             this.front = this.front.next;
@@ -63,19 +62,19 @@ class Queue extends Node {
             return dequeued.value;
         }
     }
-    peek(){
+    peek() {
         if (this.isEmpty()) {
-            throw new RangeError('The queue is empty');
+            throw new Error('The queue is empty');
             // return console.log("The queue is empty")
         } else {
-           return this.front.value;
+            return this.front.value;
         }
     }
-    isEmpty(){
-        return this.front.value == null ? 1 : 0;
+    isEmpty() {
+        return this.front == null ? 1 : 0;
     }
 
 }
 module.exports = {
-    Stack,Queue
+    Stack, Queue
 }
