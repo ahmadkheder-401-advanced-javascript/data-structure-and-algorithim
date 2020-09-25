@@ -1,18 +1,20 @@
 
 'use strict';
-
+//()[[Extra Characters]]
 function multiBracketValidation(input) {
 
   let arr = input.split('');
   let opening = ['(', '{', '['];
   let closing = [')', '}', ']'];
+
   let openingStack = [];
+
   for (let i = 0; i < arr.length; i++) {
     if (opening.includes(arr[i])) {
       openingStack.push(arr[i]);
     }
     if (closing.includes(arr[i])) {
-      let index = closing.indexOf(arr[i]);
+      let index = closing.indexOf(arr[i]);  //0,1,2
       if (openingStack[openingStack.length - 1] !== opening[index]) {
         return false;
       } else {
