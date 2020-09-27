@@ -13,6 +13,7 @@
 * [fifo-animal-shelter](https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim/tree/fifo-animal-shelter/challenges)
 * [tree](https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim/tree/tree/challenges/tree)
 * [multi-bracket-validation](https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim/tree/multi-bracket-validation/challenges/multiBracketValidation)
+* [find-maximum-binary-tree](https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim/tree/find-maximum-binary-tree/challenges/tree)
 
 
 ![cc1-reverseArr](asset/cc1-reverseArr.jpg)
