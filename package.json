@@ -1,0 +1,25 @@
+{
+  "name": "data-structure-and-algorithim",
+  "version": "1.0.0",
+  "description": "![cc1-reverseArr](asset/cc1-reverseArr.jpg) ![cc2-shiftArr](asset/cc2-shiftArr.jpg) ![cc3-binarySearch](asset/cc3binarysearch.jpg) ![cc4-ll-zip](aasset/ll-zip.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --covarege",
+    "lint": "eslint '**/*.js'",
+    "fix": "eslint '**/*.js' --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim/issues"
+  },
+  "homepage": "https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim#readme",
+  "dependencies": {
+    "eslint": "^7.10.0"
+  }
+}

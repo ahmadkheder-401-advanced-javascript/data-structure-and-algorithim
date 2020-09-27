@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 'use strict';
 class Node {
   constructor(value) {
@@ -38,7 +39,7 @@ class LinkedList {
     while(current && index !== length-k){
       index++;
       current=current.next;
-    } 
+    }
     return current? current: 'exception';
   }
 
