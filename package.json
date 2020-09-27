@@ -1,0 +1,27 @@
+{
+  "name": "data-structure-and-algorithim",
+  "version": "1.0.0",
+  "description": "![cc15-tree](aasset/cc15.png) # BinarySearchTree - [x] Can successfully instantiate an empty tree - [x] Can successfully instantiate a tree with a single root node - [x] Can successfully add a left child and right child to a single root node - [x] Can successfully return a collection from a preorder traversal - [x] Can successfully return a collection from an inorder traversal - [x] Can successfully return a collection from a postorder traversal",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^7.10.0",
+    "jest": "^26.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "lint": "eslint '**/*.js'",
+    "fix": "eslint '**/*.js' --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim/issues"
+  },
+  "homepage": "https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim#readme"
+}
