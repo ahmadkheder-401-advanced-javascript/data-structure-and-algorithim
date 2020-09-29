@@ -14,7 +14,7 @@ function multiBracketValidation(input) {
       openingStack.push(arr[i]);
     }
     if (closing.includes(arr[i])) {
-      let index = closing.indexOf(arr[i]);  //0,1,2
+      let index = closing.indexOf(arr[i]); //0,1,2
       if (openingStack[openingStack.length - 1] !== opening[index]) {
         return false;
       } else {

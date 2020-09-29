@@ -1,5 +1,7 @@
-'use strict';
+// 'use strict';
 
+
+const Queue = require('./queue');
 
 class Node {
   constructor(value, left = null, rigth = null) {
@@ -8,44 +10,10 @@ class Node {
     this.rigth = rigth;
   }
 }
-class BinarySearchTree {
-  constructor() {
-    this.root = null;
+class BinaryTree {
+  constructor(root = null) {
+    this.root = root;
   }
-
-  add(value) {
-    var newNode = new Node(value);
-    if (!this.root) {
-      this.root = newNode;
-    } else {
-      this.addNode(this.root, newNode);
-    }
-  }
-
-  addNode(node, newNode) {
-    if (newNode.value < node.value) {
-      if (!node.left) {
-        node.left = newNode;
-      } else {
-        this.addNode(node.left, newNode);
-      }
-    } else {
-      if (!node.right) {
-        node.right = newNode;
-      } else {
-        this.addNode(node.right, newNode);
-      }
-    }
-  }
-
-
-  getRootNode() {
-    if (!this.root) {
-      throw new Error('Empty Tree');
-    }
-    return this.root;
-  }
-
 
   preOrder() {
     if (!this.root) {
@@ -62,6 +30,7 @@ class BinarySearchTree {
     return result;
   }
 
+
   inOrder() {
     if (!this.root) {
       throw new Error('Empty Tree');
@@ -77,7 +46,7 @@ class BinarySearchTree {
     return result;
   }
 
-
+ 
   postOrder() {
     if (!this.root) {
       throw new Error('Empty Tree');
@@ -92,18 +61,38 @@ class BinarySearchTree {
     return result;
   }
 
-
-  contains(node, value) {
-    if (!node) {
-      throw new Error('Empty Tree');
-    } else if (value < node.value) {
-      return this.contains(node.left, value);
-    } else if (value > node.value) {
-      return this.contains(node.right, value);
-    } else {
-      return node;
+  find_maximum_value(){
+    let ordered =  this.inOrder();
+    return ordered[ordered.length-1];
+  }
+  BreadthFirst() {
+    if (!this.root) {
+      return false;
     }
+    const queue = new Queue();
+    const treeValues = [];
+    queue.enqueue(this.root);
+    queue.enqueue(queue.front.value.left);
+
+
+    while (queue.size < 14) {
+      console.log('queue.size --->', queue.size);
+      const left = queue.front.value.left;
+      const right = queue.front.value.right;
+
+      if (left) {
+        queue.enqueue(left);
+        treeValues.push(left.value);
+      }
+      if (right) {
+        queue.enqueue(right);
+        treeValues.push(right.value);
+      }
+
+      queue.dequeue();
+    }
+    return treeValues;
   }
 }
 
-module.exports = BinarySearchTree;
+module.exports = BinaryTree;

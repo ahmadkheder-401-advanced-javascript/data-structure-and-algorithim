@@ -22,3 +22,5 @@ class LinkedList {
       this.head = node;
       return this;
     }
+  }
+}

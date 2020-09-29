@@ -1,13 +1,13 @@
 # data-structure-and-algorithim
-![cc15-tree](aasset/cc15.png)
-# BinarySearchTree
-- [x] Can successfully instantiate an empty tree
+
+## BinarySearchTree
+
+- [x] Can successfully instantiate an empty tree.
 - [x] Can successfully instantiate a tree with a single root node
 - [x] Can successfully add a left child and right child to a single root node
 - [x] Can successfully return a collection from a preorder traversal
 - [x] Can successfully return a collection from an inorder traversal
 - [x] Can successfully return a collection from a postorder traversal
-
 
 ## Challenge
 
@@ -25,7 +25,8 @@ Create tree class with adding metode and implement depth traverse methods.
 - Define a method named contains that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
 
 ### Bog O
-Time complixty: O(n).
+
+Methods Time complixty: O(n).
 
 ## Implementation
 
@@ -47,19 +48,19 @@ BST.add(value);
 BST.contains(value);
 ```
 
-- Performs preorder traversal of a tree 
+- Performs preorder traversal of a tree.
 
 ```javascript
 BST.preOrder();
 ```
 
-- Performs inorder traversal of a tree 
+- Performs inorder traversal of a tree.
 
 ```javascript
 BST.inOrder();
 ```
 
-- Performs postorder traversal of a tree 
+- Performs postorder traversal of a tree.
 
 ```javascript
 BST.postOrder();

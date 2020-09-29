@@ -8,9 +8,9 @@ class Stack {
     this.top = null;
     this.len = 0;
   }
-/**
- * 
- * @param {*} value 
+  /**
+ *
+ * @param {*} value
  */
   push(value) {
     if (!value) {
