@@ -1,0 +1,27 @@
+{
+  "name": "data-structure-and-algorithim",
+  "version": "1.0.0",
+  "description": "A linked list is a linear data structure where each element is a separate object. Linked list elements are linked using pointers. Each node of a list is made up of two items - the data and a reference to the next node. The last node has a reference to null.",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^7.10.0",
+    "jest": "^26.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "lint": "eslint '**/*.js'",
+    "fix": "eslint '**/*.js' --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim/issues"
+  },
+  "homepage": "https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim#readme"
+}
