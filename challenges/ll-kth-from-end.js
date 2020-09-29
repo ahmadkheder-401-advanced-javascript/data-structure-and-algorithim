@@ -5,6 +5,7 @@ class Node {
     this.next = null;
   }
 }
+// eslint-disable-next-line no-unused-vars
 class LinkedList {
   constructor() {
     this.head = null;
@@ -25,21 +26,21 @@ class LinkedList {
 
   }
 
-  kth_from_end(k){
+  kth_from_end(k) {
     let current = this.head;
     let length = 0;
 
-    while(current){
+    while (current) {
       length++;
-      current=current.next;
+      current = current.next;
     }
     let index = 1;
-    current=this.head;
-    while(current && index !== length-k){
+    current = this.head;
+    while (current && index !== length - k) {
       index++;
-      current=current.next;
-    } 
-    return current? current: 'exception';
+      current = current.next;
+    }
+    return current ? current : 'exception';
   }
 
 }
