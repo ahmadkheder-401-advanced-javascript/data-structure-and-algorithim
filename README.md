@@ -1,67 +1,26 @@
 # data-structure-and-algorithim
 
-## BinarySearchTree
+## FizzBuzzTree
 
-- [x] Can successfully instantiate an empty tree.
-- [x] Can successfully instantiate a tree with a single root node
-- [x] Can successfully add a left child and right child to a single root node
-- [x] Can successfully return a collection from a preorder traversal
-- [x] Can successfully return a collection from an inorder traversal
-- [x] Can successfully return a collection from a postorder traversal
+- [ ] If the value is divisible by 3, replace the value with “Fizz”
+- [ ] If the value is divisible by 5, replace the value with “Buzz”
+- [ ] If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+- [ ] If the value is not divisible by 3 or 5, simply turn the number into a String.
+
 
 ## Challenge
 
-Create tree class with adding metode and implement depth traverse methods.
+Write a function called FizzBuzzTree which takes a k-ary tree as an argument.
 
 ## Approach & Efficiency
-
-- Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
-- Create a BinaryTree class
-- Define a method for each of the depth first traversals called preOrder, inOrder, and postOrder which returns an array of the values, ordered appropriately.
-- Any exceptions or errors that come from your code should be semantic, capturable errors. For example, rather than a default error thrown by your language, your code should raise/throw a custom, semantic error that describes what went wrong in calling the methods you wrote for this lab.
-
-- Create a BinarySearchTree class
-- Define a method named add that accepts a value, and adds a new node with that value in the correct location in the binary search tree.
-- Define a method named contains that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
 
 ### Bog O
 
 Methods Time complixty: O(n).
+Methods space complixty: O(1).
 
 ## Implementation
 
-- Create a new tree
+## white board
 
-```javascript
-var BST = new BinarySearchTree();
-```
-
-- Insert new value to your tree
-
-```javascript
-BST.add(value);
-```
-
-- Search for specific value
-
-```javascript
-BST.contains(value);
-```
-
-- Performs preorder traversal of a tree.
-
-```javascript
-BST.preOrder();
-```
-
-- Performs inorder traversal of a tree.
-
-```javascript
-BST.inOrder();
-```
-
-- Performs postorder traversal of a tree.
-
-```javascript
-BST.postOrder();
-```
+![Uml](asset/cc18fizzbuzz.jpg)

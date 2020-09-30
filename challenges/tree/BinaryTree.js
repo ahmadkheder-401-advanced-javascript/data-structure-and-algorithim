@@ -46,7 +46,7 @@ class BinaryTree {
     return result;
   }
 
- 
+
   postOrder() {
     if (!this.root) {
       throw new Error('Empty Tree');
