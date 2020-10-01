@@ -1,3 +1,4 @@
+/* eslint-disable no-trailing-spaces */
 'use strict';
 
 const BinarySearchTree = require('../challenges/tree/tree');

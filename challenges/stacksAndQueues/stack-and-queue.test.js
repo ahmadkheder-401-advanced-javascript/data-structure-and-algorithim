@@ -52,7 +52,7 @@ describe('Stack Module', ()=>{
   //--------------------------
   it('Can enqueue into a queue',()=>{
     let queue = new Queue();
-    expect(queue.enqueue(10)).toEqual(rear.value);
+    expect(queue.enqueue(10)).toEqual(queue.rear.value);
   });
   it('enqueue multiple values into a queue',()=>{
     let queue = new Queue();

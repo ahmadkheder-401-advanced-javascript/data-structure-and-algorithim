@@ -35,7 +35,7 @@ function zipLists(list1, list2){
   let cur2 = list2.head;
 
   let largest = length(list1) >= length(list2) ? length(list1):length(list2);
-  while(largest != 0){
+  while(largest !== 0){
     if(cur1){
       list3.append(cur1.value);
       cur1 = cur1.next;

@@ -1,3 +1,4 @@
+/* eslint-disable new-cap */
 'use strict';
 
 function BinarySearch(array,target){
@@ -7,7 +8,7 @@ function BinarySearch(array,target){
   while(startIndex <= endIndex){
     let middle ;
     array.length%2 ? middle = (array.length+1)/2 : middle=array.length/2;
-    if(array[middle]== target){
+    if(array[middle]=== target){
       return middle;
     }
     else if(array[middle] < target){
