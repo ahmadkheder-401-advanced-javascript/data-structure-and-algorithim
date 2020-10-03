@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 'use strict';
 let orgnArr1 = [1, 2, 3, 4, 5, 6];
 let rvrsdArr1 = [6, 5, 4, 3, 2, 1];
@@ -8,15 +9,15 @@ let rvrsdArr3 = [199, 197, 193, 191, 181, 179, 173, 167, 163, 157, 151, 149, 139
 console.log('----------------');
 
 function reverseArr(arr){
-    let reversedArr = [];
-    for(let i = 0 ; i <= arr.length-1 ; i++){
-        reversedArr[i] = arr[arr.length-(i+1)]
-        console.log(`reversedArr[${i}] = arr[${arr.length-(i+1)}]`);
-    }
-    console.log('Origin Array >>>>',arr);
-    console.log('Reversed Array >>>>',reversedArr);
-    console.log('----------------');
-    return reversedArr;
+  let reversedArr = [];
+  for(let i = 0 ; i <= arr.length-1 ; i++){
+    reversedArr[i] = arr[arr.length-(i+1)];
+    console.log(`reversedArr[${i}] = arr[${arr.length-(i+1)}]`);
+  }
+  console.log('Origin Array >>>>',arr);
+  console.log('Reversed Array >>>>',reversedArr);
+  console.log('----------------');
+  return reversedArr;
 }
 reverseArr(orgnArr1);
 reverseArr(orgnArr2);

@@ -1,24 +1,27 @@
 
-'use strict';
+// 'use strict';
 
-class Node {
-  constructor(value) {
-    this.value = value;
-    this.next = null;
-  }
-}
+// class Node {
+//   constructor(value) {
+//     this.value = value;
+//     this.next = null;
+//   }
+// }
 
-class LinkedList {
+// class LinkedList {
 
-  constructor() {
-    this.head = null;
-  }
+//   constructor() {
+//     this.head = null;
+//   }
 
-  append(value) {
+//   append(value) {
 
-    let node = new Node(value);
+//     let node = new Node(value);
 
-    if (!this.head) {
-      this.head = node;
-      return this;
-    }
+//     if (!this.head) {
+//       this.head = node;
+//       return this;
+//     }
+//   }
+// }
+// let x = new LinkedList();
