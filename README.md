@@ -18,6 +18,7 @@
 ### react-part
 * [InsertionSort](https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim/tree/insertion-sort)
 * [MergeSort](https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim/tree/merge-sort)
+* [quick-sort](https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim/tree/quick-sort)
 
 
 ![cc1-reverseArr](asset/cc1-reverseArr.jpg)
