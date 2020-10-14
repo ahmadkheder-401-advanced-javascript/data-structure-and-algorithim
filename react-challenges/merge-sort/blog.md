@@ -81,4 +81,4 @@ worst-case running time: O(n^2)
 
 ## Example implementation
 
-![WB](/merge-sort/mergeSortWB.png)
+![WB](https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim/blob/merge-sort/react-challenges/merge-sort/mergeSortWB.png)
