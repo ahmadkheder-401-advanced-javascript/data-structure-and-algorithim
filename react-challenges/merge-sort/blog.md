@@ -81,4 +81,4 @@ worst-case running time: O(n^2)
 
 ## Example implementation
 
-![WB](react-challenges/merge-sort/mergeSortWB.png)
+![WB](/merge-sort/mergeSortWB.png)
