@@ -43,7 +43,7 @@ class LinkedList {
 class HashTable {
   constructor(size) {
     this.size = size;
-    this.entries = new Array(size); t;
+    this.entries = new Array(size);
   }
   hash(key) {
     let charArr = key.split('');
