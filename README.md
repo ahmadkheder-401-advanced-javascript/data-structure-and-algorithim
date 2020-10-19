@@ -20,6 +20,7 @@
 * [MergeSort](https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim/tree/merge-sort)
 * [quick-sort](https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim/tree/quick-sort)
 * [hashTable](https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim/tree/hashTable/react-challenges/hashtable)
+* [repeatedWord](https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim/tree/repeated-word/react-challenges/repeatedWord)
 
 ![cc1-reverseArr](asset/cc1-reverseArr.jpg)
 ![cc2-shiftArr](asset/cc2-shiftArr.jpg)
