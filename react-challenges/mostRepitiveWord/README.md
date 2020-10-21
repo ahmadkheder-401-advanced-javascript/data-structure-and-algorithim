@@ -44,4 +44,4 @@ write a function that determines the most common word in a book
 
 ## Visualization
 
-![WhiteBoard Img](mostRepitiveWord/mostfrequent.jpg)
+![WhiteBoard Img](https://github.com/ahmadkheder-401-advanced-javascript/data-structure-and-algorithim/blob/mostFrequent/react-challenges/mostRepitiveWord/mostfrequent.jpg)
