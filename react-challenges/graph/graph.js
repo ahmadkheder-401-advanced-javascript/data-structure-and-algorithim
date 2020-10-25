@@ -18,36 +18,35 @@ class Graph {
     this.list = new Map();
   }
 
-  AddNode(vertex) {
+  addNode(vertex) {
     this.list.set(vertex, []);
     return vertex;
   }
 
-  AddEdge(startVertex, endVertex, weight) {
-    if (!this.list.has(startVertex) || !this.list.has(endVertex)) {
-      return 'Vertex not found !!!';
+  addEdge(startVertex, endNode, weight) {
+    if (!this.list.has(startVertex) || !this.list.has(endNode)) {
+      return 'node not found !!!';
     } else {
       const adjacencies = this.list.get(startVertex);
-      adjacencies.push(new Edge(endVertex, weight));
+      adjacencies.push(new Edge(endNode, weight));
       return Edge;
     }
   }
 
-  GetNeighbors(vertex) {
+  getNeighbours(vertex) {
     if (!this.list.has(vertex)) {
-      return 'vertex does not exist';
+      return 'node does not exist';
     } else {
       return this.list.get(vertex);
     }
   }
 
-  GetNodes() {
+  getNodes() {
     return this.list.entries();
   }
 
-  Size() {
+  size() {
     return this.list.size;
   }
 }
-
 module.exports = { Vertex, Edge, Graph};
