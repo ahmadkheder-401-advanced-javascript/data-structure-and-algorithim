@@ -25,7 +25,7 @@ class Graph {
 
   addEdge(startVertex, endNode, weight) {
     if (!this.list.has(startVertex) || !this.list.has(endNode)) {
-      return 'node not found !!!';
+      return 'node not found';
     } else {
       const adjacencies = this.list.get(startVertex);
       adjacencies.push(new Edge(endNode, weight));
