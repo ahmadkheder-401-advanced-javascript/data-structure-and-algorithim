@@ -25,12 +25,11 @@ write a function that takes in two hashTables and join them ito an array
 
 ## Algorithm
 
-- create a fubc tion called leftjoin takes  2 hashtable args 
-- read the hashtable to an array 
+- create a fubc tion called leftjoin takes  2 hashtable args
+- read the hashtable to an array
 - loop thrugh the first array
 - loop thrugh the scond array
 - check the index i of the first isEqual to j of the second
-- push the value of the first array to a new one 
-- else push the value of the second 
+- push the value of the first array to a new one
+- else push the value of the second
 - return array
-

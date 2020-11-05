@@ -1,7 +1,7 @@
 'use strict';
 
 const leftJoin = require('./left-join');
-const Hashtable = require('../hashtable/hashtable').HashTable;
+const Hashtable = require('./hashtable');
 
 describe('Left Join two Hashtables', () => {
 
