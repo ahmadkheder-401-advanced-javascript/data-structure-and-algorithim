@@ -18,12 +18,12 @@ class Graph {
     this.list = new Map();
   }
 
-  AddNode(vertex) {
+  addVertex(vertex) {
     this.list.set(vertex, []);
     return vertex;
   }
 
-  AddEdge(startVertex, endVertex, weight) {
+  addEdge(startVertex, endVertex, weight) {
     if (!this.list.has(startVertex) || !this.list.has(endVertex)) {
       return 'Vertex not found !!!';
     } else {
@@ -33,7 +33,7 @@ class Graph {
     }
   }
 
-  GetNeighbors(vertex) {
+  getNeighbours(vertex) {
     if (!this.list.has(vertex)) {
       return 'vertex does not exist';
     } else {
@@ -41,13 +41,17 @@ class Graph {
     }
   }
 
-  GetNodes() {
+  getNodes() {
     return this.list.entries();
   }
 
-  Size() {
+  getSize() {
     return this.list.size;
   }
 }
 
-module.exports = { Vertex, Edge, Graph};
+module.exports = {
+  Vertex,
+  Edge,
+  Graph,
+};
