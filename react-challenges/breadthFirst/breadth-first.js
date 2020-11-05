@@ -5,8 +5,8 @@ const Graph = require('../graph/graph').Graph;
 class BreadthFirst extends Graph {
 
   bfs(startNode) {
-    const queue = [];  
-    const vistedNodes = new Set(); 
+    const queue = [];
+    const vistedNodes = new Set();
 
     queue.push(startNode);
     vistedNodes.add(startNode);
@@ -15,7 +15,7 @@ class BreadthFirst extends Graph {
       const currentNode = queue.shift();
 
       const neighbors = this.getNeighbors(currentNode);
-            
+
       for (let neighbor of neighbors) {
         const neighborNode = neighbor.vertex;
         if(vistedNodes.has(neighborNode)) {
@@ -27,7 +27,7 @@ class BreadthFirst extends Graph {
       }
 
     }
-        
+
     return vistedNodes;
   }
 

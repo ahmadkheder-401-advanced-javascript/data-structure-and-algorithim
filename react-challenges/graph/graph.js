@@ -18,24 +18,24 @@ class Graph {
     this.list = new Map();
   }
 
-  addNode(vertex) {
+  addVertex(vertex) {
     this.list.set(vertex, []);
     return vertex;
   }
 
-  addEdge(startVertex, endNode, weight) {
-    if (!this.list.has(startVertex) || !this.list.has(endNode)) {
-      return 'node not found !!!';
+  addEdge(startVertex, endVertex, weight) {
+    if (!this.list.has(startVertex) || !this.list.has(endVertex)) {
+      return 'Vertex not found !!!';
     } else {
       const adjacencies = this.list.get(startVertex);
-      adjacencies.push(new Edge(endNode, weight));
+      adjacencies.push(new Edge(endVertex, weight));
       return Edge;
     }
   }
 
   getNeighbours(vertex) {
     if (!this.list.has(vertex)) {
-      return 'node does not exist';
+      return 'vertex does not exist';
     } else {
       return this.list.get(vertex);
     }
@@ -45,8 +45,13 @@ class Graph {
     return this.list.entries();
   }
 
-  size() {
+  getSize() {
     return this.list.size;
   }
 }
-module.exports = { Vertex, Edge, Graph};
+
+module.exports = {
+  Vertex,
+  Edge,
+  Graph,
+};
