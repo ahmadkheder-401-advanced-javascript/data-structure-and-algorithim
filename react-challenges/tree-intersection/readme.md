@@ -31,7 +31,7 @@ array
 
 
 **Visualization:**
-![Visualization](tree-intersection/treeInsertion.jpg)
+![Visualization](./treeInsertion.jpg)
 
 **code**
 
