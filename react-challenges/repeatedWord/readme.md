@@ -13,7 +13,7 @@ Find the first repeated word in a book.
 
 ## Big O
 
-- time O(n)
+- time O(n^2)
 - space O(n)
 
 ## Solution
