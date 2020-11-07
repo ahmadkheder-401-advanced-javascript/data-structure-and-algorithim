@@ -56,5 +56,5 @@ const tree_intersection = (tree1, tree2) => {
 ```
 
 **Big O:**
-Time: O(n), Space: O(1)
+Time: O(n log n), Space: O(n)
 
