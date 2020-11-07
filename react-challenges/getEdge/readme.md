@@ -32,9 +32,7 @@ Write a function that takes in a graph, and an array of city names. Without util
 **input:** grapgh, array
 **output:** string
 
-**Big O**
-time : O(n^2)
-space : O(1)
+
 **code:**
 ```
 function tripCost(graph, cityArray) {
